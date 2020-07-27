@@ -1,0 +1,16 @@
+version: "3"
+services:
+  prom:
+    image: prom/prometheus:v2.19.3
+    ports:
+      - 9090:9090
+    volumes:
+      - ./metrics/prometheus.yml:/etc/prometheus/prometheus.yml
+  app:
+    build:
+        context: app
+    ports:
+      - 5000:5000
+    volumes:
+      - ./model.pkl:/app/model.pkl
+      - ./histogram.prom:/app/histogram.prom
