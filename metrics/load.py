@@ -4,7 +4,7 @@ from random import gauss
 from requests import Session
 
 
-def test_serve():
+def main():
     data = [0.03, 0.05, -0.002, -0.01, 0.04, 0.01, 0.08, -0.04, 0.005, -0.1]
     with Session() as s:
         for i in range(60):
@@ -17,4 +17,4 @@ def test_serve():
 
 
 if __name__ == "__main__":
-    test_serve()
+    main()
