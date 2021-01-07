@@ -8,6 +8,7 @@ Initialise a `python3` virtual environment and activate it. Then install the tra
 
 ```bash
 pip install -r requirements.txt
+pip install -r app/requirements.txt
 ```
 
 ## Train
@@ -25,7 +26,7 @@ Running the command above creates two files in the current directory: `histogram
 The serving script creates a flask server that uses the trained model.
 
 ```bash
-python3 serve_completed.py
+python3 app/serve_completed.py
 ```
 
 You can test the server by sending a HTTP request using `curl`.
