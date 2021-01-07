@@ -53,4 +53,6 @@ pip install requests
 python3 metrics/load.py
 ```
 
-Navigate to [http://localhost:9090](http://localhost:9090) for the Prometheus GUI.
+Navigate to [http://localhost:3000](http://localhost:3000) for the Grafana GUI, then login with `admin` and `admin`, skip changing the admin password, then navigate to Dashboards -> Manage -> Model Metrics:
+
+![Grafana dashboard](model-metrics.png "Grafana Dashboard")
